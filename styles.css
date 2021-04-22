@@ -74,6 +74,14 @@ body {
   border: 3px solid white;
 }
 
+img {
+  width: 30px
+}
+
+ {
+  background-image: url(./images/hero.jpg);
+}
+
 a {
   text-decoration: none;
 }
