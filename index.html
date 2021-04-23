@@ -18,38 +18,40 @@
 
 
 <!-- change to my fonts later -->
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="print.css" rel="stylesheet" media="print">
 </head>
 <body>
     <header id="top">
         <nav class="clearfix">
-            <div class="logo">Elizabeth "Biz" Hight</div>
+            <div class="logo">Elizabeth Hight</div>
             <ul class="nav-items">
                 <li class="show-web-only">
                     <a href="#top">
-                        <img src='./images/home.png' alt='home'>
+                        <i class="fab fa-fort-awesome nav-icons"></i>
                         <span>Home</span>
                     </a>
                 </li>
                 <li class="show-web-only">
                     <a href="#bio">
-                        <img src='./images/user.png' alt='about'> 
+                        <i class="fas fa-glasses nav-icons"></i> 
                         <span>About</span>
                     </a>
                 </li>
                 <li class="show-web-only">
                     <a href="#skills">
-                        <img src='./images/skill.png' alt='skills'> 
+                        <i class="fas fa-hashtag nav-icons"></i>
                         <span>Skills</span>
                     </a>
                 </li>
                 <li class="show-web-only">
                     <a href="#projects">
-                        <img src='./images/portfolio.png'> 
+                        <i class="fas fa-cubes nav-icons"></i> 
                         <span>Projects</span>
                     </a>
                 </li>
@@ -75,23 +77,27 @@
                 </li>
                 <li class="show-web-only">
                     <a href="#contact">
-                        <i class="fa fa-envelope"></i> 
+                        <i class="fas fa-paper-plane nav-icons"></i>
                         <span>Contact</span>
                     </a>
                 </li>
             </ul>
         </nav>
-        <div class='slogan-wrapper'>
-            <h2>Communicate</h2>
-            <h2>Strategize</h2>
-            <h2>Connect</h2>
-        </div>
+        
+            <h1>
+                communicate 
+                <br>
+                strategize 
+                <br>
+                connect
+            </h1>
+            
     </header>
 
 
     <section class="about clearfix" id="bio">
-        <h2><i class="fas fa-user-circle"></i> About
-            <img class="about-me-image" src="images/about-me-images/about-me-image-cropped.jpg" alt="Evan" />
+        <h2><i class="fas fa-glasses"></i> About
+            <img class="about-me-image" src="images/me.jpg" alt="Biz" />
         </h2>
         <p class="bio">
             As a lifelong learner, I love coding because it constantly challenges me to push the boundaries of my
@@ -109,7 +115,7 @@
     </section>
 
     <section class="skills" id="skills">
-        <h2><i class="fa fa-cog"></i> Skills</h2>
+        <h2><i class="fa fa-hashtag"></i> Skills</h2>
         <div class="logo-container">
             <figure class="figure-skills">
                 <img class="logo html" src="images/iconfinder_HTML.png" alt="html logo">
@@ -165,7 +171,7 @@
 
     <section class="projects" id="projects">
         <h2>
-            <i class="fa fa-briefcase"></i> 
+            <i class="fas fa-cubes"></i> 
             Projects
         </h2>
 
@@ -375,7 +381,7 @@
     <section class="contact" id="contact">
         <ul class="contact-list">
             <li>
-                <a href="mailto:evanpoe91@yahoo.com?subject=Responding%20to%20Your%20Portfolio!">
+                <a href="mailto:elizabeth.biz.hight@gmail.com?subject=Responding%20to%20Your%20Portfolio!">
                     <i class="fa fa-envelope"></i>
                 </a>
             </li>
@@ -385,7 +391,7 @@
                 </a>
             </li>
             <li>
-                <a href="https://github.com/EvanPoe" target="_blank">
+                <a href="https://github.com/biz-codes" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
             </li>
@@ -396,16 +402,6 @@
 
 
     <footer>
-        <!-- need to fix css here -->
-        <div>Icons made by 
-            <div>Icons made by 
-            <a href="" title="Kiranshastry">Kiranshastry</a>,
-            <a href="https://www.flaticon.com/authors/xnimrodx" title="xnimrodx">xnimrodx</a> 
-            and 
-            <a href="https://www.freepik.com" title="Freepik">Freepik</a> 
-            from 
-            <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-        </div>
         <h4>© 2021 Elizabeth Hight</h4>
         <a href="#top">
             <i class="far fa-caret-square-up fa-2x"></i>
@@ -437,6 +433,6 @@
     </script>
     <!-- End Inspectlet Asynchronous Code -->
 
-    <script src="scripts.js"></script>
+    <!-- <script src="scripts.js"></script> -->
 </body>
 </html>
