@@ -6,7 +6,7 @@
       }
       */
     body {
-      width: 1200px !important;
+      width: 1024px !important;
     }
     div[class|="col-"] {
       float: left !important;
@@ -22,7 +22,7 @@
     }
   
     section {
-      width: 70%;
+      width: 100%;
       margin: 15px auto;
       padding-top: 10px;
       padding-bottom: 10px;
@@ -45,7 +45,7 @@
   
     header nav div.logo {
       padding: 0px;
-      font-size: 255%;
+      font-size: 120%;
     }
   
     header nav ul.nav-items li {
@@ -57,6 +57,11 @@
       page-break-after: always;
     }
   
+    section.skills div.logo-container figure.figure-skills img {
+      width: auto;
+      height: 100px;
+  }
+
     section.contact {
       display: none;
   }

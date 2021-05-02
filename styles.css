@@ -193,13 +193,15 @@ section h2 {
   border-bottom: 1px solid #FEFCFD;
 }
 
-section.about {
-}
+/* section.about {
+  
+} */
 
 section.about h2 img.about-me-image {
-  float: right;
+  float: left;
+  margin-left: 20px;
   margin-right: 20px;
-  width: 32%;
+  width: 25%;
   border-radius: 15px;
   border: 1px solid #1E294C;
 }
@@ -367,6 +369,15 @@ footer {
 
 footer h4 {
   font-size: 75%;
+}
+
+footer p a {
+  font-size: 10px;
+  color: #1E294C;
+}
+
+footer p a:hover {
+  color: #2676BB;
 }
 
 footer a i.far {
