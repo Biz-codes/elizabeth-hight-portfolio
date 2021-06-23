@@ -351,8 +351,17 @@ section.contact ul.contact-list li a {
   color: #1E294C;
 }
 
+section.contact ul.contact-list li a p.contact-link {
+  font-size: 50%
+}
+
 section.contact ul.contact-list li a:hover {
   color: #2676BB;
+}
+
+.top {
+  color: #1E294C;
+  font-size: 50%;
 }
 
 /* -------------------------------------
