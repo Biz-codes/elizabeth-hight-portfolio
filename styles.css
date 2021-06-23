@@ -59,10 +59,10 @@ Is a short set of CSS rules that resets the styling of all HTML elements to a co
 
 /* -------------------------------------
 General styles (General Module, wrapping around the modules below)
-(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules below (h2, h3, h4, h5, h6, p, a, ul, li))
+(the styles used everywhere in the page (like the main) or styles which are used in more than 2 of the modules below (h2, h3, h3, h5, h6, p, a, ul, li))
 */
 
-body {
+main {
   font-family: "Libre Baskerville", serif;
   font-size: 20px;
   color: rgb(0, 0, 0);
@@ -132,12 +132,12 @@ header nav {
 }
 
 header nav ul.nav-items,
-header nav div.logo {
+header nav article.logo {
   display: inline-block;
   width: auto;
 }
 
-header nav div.logo {
+header nav article.logo {
   padding: 0px 20px;
   color: #1E294C;
   font-family: "Bad Script", cursive;
@@ -199,7 +199,6 @@ section h2 {
 
 section.about h2 img.about-me-image {
   float: left;
-  margin-left: 20px;
   margin-right: 20px;
   width: 25%;
   border-radius: 15px;
@@ -211,7 +210,7 @@ section.about p.bio {
   margin-bottom: 20px;
 }
 
-section.skills div.logo-container figure.figure-skills {
+section.skills article.logo-container figure.figure-skills {
   display: inline-block;
   width: 22%;
   text-align: center;
@@ -219,7 +218,7 @@ section.skills div.logo-container figure.figure-skills {
   margin: 1%;
 }
 
-section.skills div.logo-container figure.figure-skills img {
+section.skills article.logo-container figure.figure-skills img {
   width: 100%;
 }
 
@@ -227,22 +226,22 @@ section.projects {
   display: block;
 }
 
-section.projects div.project-container {
+section.projects article.project-container {
   margin-bottom: 5%;
   margin-top: 2%;
   border-bottom: 1px solid #FEFCFD
 }
 
-section.projects div.project-container:last-child {
+section.projects article.project-container:last-child {
   border-bottom: 0;
 }
 
-section.projects div.project-container h4 {
+section.projects article.project-container h3 {
   margin-bottom: 15px;
   font-size: 120%;
 }
 
-section.projects div.project-container div.project-column {
+section.projects article.project-container article.project-column {
   display: inline-block;
   width: 48%;
   margin-left: 0.5%;
@@ -252,11 +251,11 @@ section.projects div.project-container div.project-column {
   padding-left: 20px;
 }
 
-section.projects div.project-container div.project-column img {
+section.projects article.project-container article.project-column img {
   width: 100%;
 }
 
-section.projects div.project-container div.project-column ul.project-skills {
+section.projects article.project-container article.project-column ul.project-skills {
   display: block;
   width: 100%;
   margin-top: 20px;
@@ -265,7 +264,7 @@ section.projects div.project-container div.project-column ul.project-skills {
   font-size: 80%;
 }
 
-section.projects div.project-container div.project-column ul.project-skills li {
+section.projects article.project-container article.project-column ul.project-skills li {
   display: inline-block;
   width: auto;
   padding: 5px 10px;
@@ -273,7 +272,7 @@ section.projects div.project-container div.project-column ul.project-skills li {
   border: 1px solid #FEFCFD;
 }
 
-section.projects div.project-container div.project-column ul.project-buttons {
+section.projects article.project-container article.project-column ul.project-buttons {
   display: block;
   width: 100%;
   margin-bottom: 20px;
@@ -281,8 +280,8 @@ section.projects div.project-container div.project-column ul.project-buttons {
 }
 
 section.projects
-  div.project-container
-  div.project-column
+  article.project-container
+  article.project-column
   ul.project-buttons
   li {
   display: inline-block;
@@ -290,8 +289,8 @@ section.projects
 }
 
 section.projects
-  div.project-container
-  div.project-column
+  article.project-container
+  article.project-column
   ul.project-buttons
   li
   a {
@@ -306,29 +305,29 @@ section.projects
 }
 
 section.projects
-  div.project-container
-  div.project-column
+  article.project-container
+  article.project-column
   ul.project-buttons
   li
   a:hover {
   background-color: #2676BB;
 }
 
-section.project div.project-container .project-image {
+section.project article.project-container .project-image {
   width: 65%;
   min-width: 280px;
 }
 
-section.project div.project-container .app-description {
+section.project article.project-container .app-description {
   text-align: center;
   padding: 5%;
 }
 
-section.project div.project-container .fab {
+section.project article.project-container .fab {
   font-size: x-large;
 }
 
-section.project div.project-container .fas {
+section.project article.project-container .fas {
   margin-bottom: 5%;
 }
 
@@ -367,7 +366,7 @@ footer {
   border: 0px;
 }
 
-footer h4 {
+footer h3 {
   font-size: 75%;
 }
 
@@ -401,14 +400,14 @@ place all the mobile tables styles below this line
 
 /*large desktop*/
 @media only screen and (max-width: 1600px) {
-  body {
+  main {
     /* border: 3px solid yellow; */
   }
 }
 
 /*iPad lanscape / small laptop*/
 @media only screen and (max-width: 1024px) {
-  body {
+  main {
     /* border: 3px solid blue; */
   }
 
@@ -429,7 +428,7 @@ place all the mobile tables styles below this line
 
 /*iPad potrait*/
 @media only screen and (max-width: 768px) {
-  body {
+  main {
     /* border: 3px solid red; */
   }
 
@@ -441,11 +440,11 @@ place all the mobile tables styles below this line
     display: none;
   }
 
-  section {
+  /* section {
     width: 95%;
-  }
+  } */
 
-  section.projects div.project-container div.project-column {
+  section.projects article.project-container article.project-column {
     display: block;
     width: 99%;
   }
@@ -458,7 +457,7 @@ place all the mobile tables styles below this line
 
 /*Android landscape*/
 @media only screen and (max-width: 640px) {
-  body {
+  main {
     /* border: 3px solid brown; */
   }
 
@@ -473,7 +472,7 @@ place all the mobile tables styles below this line
 
 /*iPhone landscape*/
 @media only screen and (max-width: 480px) {
-  body {
+  main {
     /* border: 3px solid green; */
   }
 
@@ -486,7 +485,7 @@ place all the mobile tables styles below this line
     float: none;
   }
   header nav ul.nav-items,
-  header nav div.logo {
+  header nav article.logo {
     display: block;
     text-align: center;
   }
@@ -497,14 +496,14 @@ place all the mobile tables styles below this line
     display: block;
   }
 
-  section.skills div.logo-container figure.figure-skills {
+  section.skills article.logo-container figure.figure-skills {
     width: 45%;
   }
 }
 
 /*iPhone portrait*/
 @media only screen and (max-width: 320px) {
-  body {
+  main {
     /* border: 3px solid purple; */
   }
 }

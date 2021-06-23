@@ -5,10 +5,10 @@
           margin: 10mm;
       }
       */
-    body {
+    main {
       width: 1024px !important;
     }
-    div[class|="col-"] {
+    article[class|="col-"] {
       float: left !important;
     }
     a[href]:after {
@@ -43,7 +43,7 @@
       margin: 30px auto;
     }
   
-    header nav div.logo {
+    header nav article.logo {
       padding: 0px;
       font-size: 120%;
     }
@@ -57,7 +57,7 @@
       page-break-after: always;
     }
   
-    section.skills div.logo-container figure.figure-skills img {
+    section.skills article.logo-container figure.figure-skills img {
       width: auto;
       height: 100px;
   }
